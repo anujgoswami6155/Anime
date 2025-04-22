@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+    line-height: 1.6;
+    background: url('../Images/All_Anime_img_2.jpg');
+}
+
+header {
+    background-color: orangered;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tag{
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.heading {
+    text-align: center;
+    color: gold;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.anime_box {
+    display: flex;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.3);
+    gap: 20px; /* spacing between image and content */
+}
+
+.anime_box img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.anime_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.anime_info h2 {
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+/* Genre styling */
+#genere {
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    border-left: 4px solid orangered;
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.anime_info p {
+    margin-bottom: 10px;
+}
